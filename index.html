@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Namorados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7eaea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #c72c41;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #loveLetter {
+            display: none;
+            margin: 20px;
+            margin-top: 20px;
+            border: 2px solid #c72c41;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #loveLetter p {
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #c72c41;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #cc5d70;
+        }
+
+        #amor {
+            width: 10em;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Dia dos Namorados!</h1>
+        <p>Você é o amor da minha vida.</p>
+        <button id="showLoveLetter">Abra a carta aqui, Blenda</button>
+        <div id="loveLetter">
+            <p>Gatinha,</p>
+            <p>Quero aproveitar esta oportunidade para te dizer o quanto você é importante para mim. Cada momento ao seu lado é um presente precioso. Espero que este dia seja apenas o começo de uma vida inteira juntos, cheia de amor, felicidade e cumplicidade.</p>
+            <p>Amo você demais,<br>Seu Namorado, Maia</p>
+            <div>
+                <img id="amor" src="./img/amor.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showLoveLetter').addEventListener('click', function() {
+            document.getElementById('loveLetter').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
